@@ -64,6 +64,8 @@ map gr <Action>(FindUsages)
 "" Diagnostic keymaps
 nmap [d <Action>(GotoPreviousError)
 nmap ]d <Action>(GotoNextError)
+nmap [q <Action>(PreviousOccurence)
+nmap ]q <Action>(NextOccurence)
 nmap <leader>e <Action>(ShowErrorDescription)
 nmap <leader>q <Action>(ShowIntentionActions)
 
