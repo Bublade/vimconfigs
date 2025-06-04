@@ -6,13 +6,9 @@ Plug 'tpope/vim-commentary'
 Plug 'easymotion/vim-easymotion'
 Plug 'dbakker/vim-paragraph-motion'
 
-:set ignorecase
-:set smartcase
-
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-
 let currentmapleader = mapleader
+
+"" IDE tool functions
 let mapleader= '\'
 
 map <leader>d <Action>(Debug)
@@ -31,35 +27,23 @@ map <leader>cbs <Action>(RebuildSolutionAction)
 
 map <leader><leader>r <Action>(HTTPClient.RunAll)
 
-map <leader>ghc <action>(copilot.chat.show)
-
+"" File Navigation
 let mapleader = currentmapleader
 
 map - <Action>(ActivateProjectToolWindow)
 map <leader>ff <Action>(SelectInProjectView)
-
-""   nnoremap <A-j> <Action>(MoveLineDown)
-""   nnoremap <A-k> <Action>(MoveLineUp)
-""   inoremap <A-j> <Action>(MoveLineDown)
-""   inoremap <A-k> <Action>(MoveLineUp)
-""   vnoremap <A-j> <Action>(MoveLineDown)
-""   vnoremap <A-k> <Action>(MoveLineUp)
-
 map <leader>pf <Action>(GotoClass)
 map <leader>pF <Action>(GotoFile)
-
 map <leader>pv <Action>(ShowNavBar)
 
+"" lsp functions
 map gd <Action>(GotoDeclaration)
 map K <Action>(ShowHoverInfo)
 map gi <Action>(ReSharperGotoImplementation)
-
 map <space>D <Action>(GotoTypeDeclaration)
 map <space>rn <Action>(RenameElement)
 map <space>ca <Action>(ShowIntentionActions)
 map gr <Action>(FindUsages)
-"" map <space>f <Action>(ReformatCode)
-
 
 "" Diagnostic keymaps
 nmap [d <Action>(GotoPreviousError)
