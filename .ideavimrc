@@ -46,8 +46,10 @@ map <space>ca <Action>(ShowIntentionActions)
 map gr <Action>(FindUsages)
 
 "" Diagnostic keymaps
-nmap [d <Action>(GotoPreviousError)
-nmap ]d <Action>(GotoNextError)
+nmap [D <Action>(GotoPreviousError)
+nmap ]D <Action>(GotoNextError)
+nmap [d <Action>(ReSharperGotoPreviousErrorInSolution)
+nmap ]d <Action>(ReSharperGotoNextErrorInSolution)
 nmap [q <Action>(PreviousOccurence)
 nmap ]q <Action>(NextOccurence)
 nmap <leader>e <Action>(ShowErrorDescription)
