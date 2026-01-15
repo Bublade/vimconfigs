@@ -19,6 +19,8 @@ map <leader>t <Action>(RiderUnitTestRunSolutionAction)
 map <leader>ct <Action>(RiderUnitTestRunContextAction)
 map <leader>R <Action>(Replace)
 
+map <leader>os <Action>(RiderManageRecentProjects)
+
 map <leader>ir <Action>(IdeaVim.ReloadVimRc.reload)
 
 map <leader>db <Action>(ActivateDatabaseToolWindow)
@@ -27,9 +29,11 @@ map <leader>cbs <Action>(RebuildSolutionAction)
 
 map <leader><leader>r <Action>(HTTPClient.RunAll)
 
-"" File Navigation
 let mapleader = currentmapleader
 
+map <leader><leader> <NOP>
+
+"" File Navigation
 map - <Action>(ActivateProjectToolWindow)
 map <leader>ff <Action>(SelectInProjectView)
 map <leader>pf <Action>(GotoClass)
