@@ -49,3 +49,7 @@ nnoremap n nzz
 nnoremap N Nzz
 nnoremap ; ;zz
 nnoremap , ,zz
+nnoremap <C-D> <C-D>zz
+nnoremap <C-U> <C-U>zz
+nnoremap <C-I> <C-I>zz
+nnoremap <C-O> <C-O>zz
