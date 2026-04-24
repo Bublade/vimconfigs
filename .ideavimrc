@@ -11,11 +11,22 @@ let currentmapleader = mapleader
 "" IDE tool functions
 let mapleader= '\'
 
+map <leader>\\\\ <Action>(VimFindActionIdAction)
+
+map <leader>wt <Action>(ActivateUnitTestsToolWindow)
+map <leader>wdb <Action>(ActivateDatabaseToolWindow)
+map <leader>wnu <Action>(ActivateNuGetToolWindow)
+map <leader>wf <Action>(ActivateFindToolWindow)
+map <leader>wp <Action>(ActivateProblemsViewToolWindow)
+map <leader>wAI <Action>(ActivateElectroJunToolWindowToolWindow)
+map <leader>ws <Action>(ActivateServicesToolWindow)
+
 map <leader>d <Action>(Debug)
 map <leader>r <Action>(Run)
 map <leader>s <Action>(Stop)
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>t <Action>(RiderUnitTestRunSolutionAction)
+map <leader>Ct <Action>(RiderDotCoverUnitTestCoverSolutionAction)
 map <leader>ct <Action>(RiderUnitTestRunContextAction)
 map <leader>R <Action>(Replace)
 
@@ -23,8 +34,8 @@ map <leader>os <Action>(RiderManageRecentProjects)
 
 map <leader>ir <Action>(IdeaVim.ReloadVimRc.reload)
 
-map <leader>db <Action>(ActivateDatabaseToolWindow)
 map <leader>bs <Action>(BuildWholeSolutionAction)
+map <leader>bb <Action>(BuildSolutionBar)
 map <leader>cbs <Action>(RebuildSolutionAction)
 
 map <leader><leader>r <Action>(HTTPClient.RunAll)
@@ -40,6 +51,10 @@ map <leader>pf <Action>(GotoClass)
 map <leader>pF <Action>(GotoFile)
 map <leader>pv <Action>(ShowNavBar)
 
+map <leader>sg <Action>(FindInPath)
+map <leader>sf <Action>(GotoFile)
+map <leader>sc <Action>(GotoClass)
+
 "" lsp functions
 map gd <Action>(GotoDeclaration)
 map K <Action>(ShowHoverInfo)
@@ -52,7 +67,7 @@ map gr <Action>(FindUsages)
 "" Diagnostic keymaps
 nmap [D <Action>(GotoPreviousError)
 nmap ]D <Action>(GotoNextError)
-nmap [d <Action>(ReSharperGotoPreviousErrorInSolution)
+nmap [d <Action>(ReSharperGotoPrevErrorInSolution)
 nmap ]d <Action>(ReSharperGotoNextErrorInSolution)
 nmap [q <Action>(PreviousOccurence)
 nmap ]q <Action>(NextOccurence)
