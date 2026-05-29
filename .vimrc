@@ -30,12 +30,9 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 
 "" -- Custom mappings --
-noremap <Leader>y \"my
-noremap <Leader>Y \"+y
-noremap <Leader>p \"mp
-noremap <Leader>P \"mP
-noremap <leader>v \"*p
-noremap <leader>V \"*P
+noremap <Leader>y \"+y
+noremap <Leader>p \"+p
+noremap <Leader>P \"+P
 nnoremap k kzz
 vnoremap k kzz
 nnoremap j jzz
