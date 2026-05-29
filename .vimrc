@@ -1,16 +1,27 @@
+set relativenumber
+set number
+
 set ignorecase
 set smartcase
 set incsearch
+if has ("syntax")
+        syntax on
+endif
 
 let g:highlightedyank_highlight_duration = 1000
 
 let mapleader = "\<Space>"
 
+" Sometimes I like shift too much
 command! W write
 command! Q quit
+command! Wq wq
 command! WQ wq
+command! Wa wall
 command! WA wall
-command! WQA wqa
+command! Wqa wqall
+command! WQa wqall
+command! WQA wqall
 
 " Don't use Ex mode, use Q for formatting.
 map Q <NOP>
