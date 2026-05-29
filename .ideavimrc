@@ -13,6 +13,10 @@ let mapleader= '\'
 
 map <leader>\\\\ <Action>(VimFindActionIdAction)
 
+map <leader>os <Action>(RiderManageRecentProjects)
+map <leader>ir <Action>(IdeaVim.ReloadVimRc.reload)
+
+"" Tool (w)indows
 map <leader>wt <Action>(ActivateUnitTestsToolWindow)
 map <leader>wdb <Action>(ActivateDatabaseToolWindow)
 map <leader>wnu <Action>(ActivateNuGetToolWindow)
@@ -22,6 +26,17 @@ map <leader>wAI <Action>(ActivateElectroJunToolWindowToolWindow)
 map <leader>ws <Action>(ActivateServicesToolWindow)
 map <leader>wc <Action>(ActivatedotCoverToolWindowToolWindow)
 
+"" Tab (m)anipulation
+map <leader>mr <Action>(MoveTabRight)
+map <leader>md <Action>(MoveTabDown)
+map <leader>mo <Action>(MoveEditorToOppositeTabGroup)
+map <leader>mu <Action>(Unsplit)
+map <leader>mcs <Action>(ChangeSplitOrientation)
+map <leader>mcr <Action>(SplitVertically)
+map <leader>mcd <Action>(SplitHorizontally)
+map <leader>mco <Action>(OpenEditorInOppositeTabGroup)
+
+"" IDE actions
 map <leader>d <Action>(Debug)
 map <leader>r <Action>(Run)
 map <leader>s <Action>(Stop)
@@ -32,11 +47,6 @@ map <leader>R <Action>(Replace)
 map <leader>Ct <Action>(RiderDotCoverUnitTestCoverSolutionAction)
 map <leader>UN <Action>(RiderDotCoverGoToNextUncoveredStatementAction)
 map <leader>UP <Action>(RiderDotCoverGoToPreviousUncoveredStatementAction)
-
-map <leader>os <Action>(RiderManageRecentProjects)
-
-map <leader>ir <Action>(IdeaVim.ReloadVimRc.reload)
-
 map <leader>bs <Action>(BuildWholeSolutionAction)
 map <leader>bb <Action>(BuildSolutionBar)
 map <leader>cbs <Action>(RebuildSolutionAction)
@@ -50,12 +60,15 @@ map <leader><leader> <NOP>
 "" File Navigation
 map - <Action>(ActivateProjectToolWindow)
 map <leader>ff <Action>(SelectInProjectView)
-map <leader>pf <Action>(GotoClass)
-map <leader>pF <Action>(GotoFile)
-map <leader>pv <Action>(ShowNavBar)
+map <leader>b <Action>(Switcher)
 
-map <leader>sg <Action>(FindInPath)
+"" (P)ickers
+map <leader>pv <Action>(ShowNavBar)
+map <leader>pr <Action>(RunAnything)
+
+"" (S)earch
 map <leader>sf <Action>(GotoFile)
+map <leader>sg <Action>(FindInPath)
 map <leader>sc <Action>(GotoClass)
 
 "" lsp functions
