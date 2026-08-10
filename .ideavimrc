@@ -36,9 +36,15 @@ map <leader>mcr <Action>(SplitVertically)
 map <leader>mcd <Action>(SplitHorizontally)
 map <leader>mco <Action>(OpenEditorInOppositeTabGroup)
 
+"" EditorLayoutActions
+map <leader>le <Action>(TextEditorWithPreview.Layout.EditorOnly)
+map <leader>lb <Action>(TextEditorWithPreview.Layout.EditorAndPreview)
+map <leader>lp <Action>(TextEditorWithPreview.Layout.PreviewOnly)
+
 "" IDE actions
 map <leader>d <Action>(Debug)
 map <leader>r <Action>(Run)
+"" (RedesignedRunConfigurationSelector)
 map <leader>s <Action>(Stop)
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>t <Action>(RiderUnitTestRunSolutionAction)
